@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="lunar">
+    <input type="submit" value="Nhập năm dương" onclick="onClick()">
+    <script>
+        function onClick() {
+            let year=document.getElementById('lunar').value;
+            year=parseInt(year);
+            let lunaryear;
+            let can=year%10;
+            let chi=year%12;
+            switch (can) {
+                   case 0: lunaryear="Canh";break;
+                   case 1: lunaryear="Tân";break;
+                   case 2: lunaryear="Nhâm";break;
+                   case 3: lunaryear="Quý";break;
+                   case 4: lunaryear="Giáp";break;
+                   case 5: lunaryear="Ất";break;
+                   case 6: lunaryear="Bính";break;
+                   case 7: lunaryear="Đinh";break;
+                   case 8: lunaryear="Mậu";break;
+                   case 9:lunaryear="Kỉ";break;
+            }
+
+            switch (chi) {
+                   case 0: lunaryear=lunaryear + " Thân" ;break;
+                   case 1: lunaryear=lunaryear + " Dậu" ;break;
+                   case 2: lunaryear=lunaryear + " Tuất" ;break;
+                   case 3: lunaryear=lunaryear + " Hợi" ;break;
+                   case 4: lunaryear=lunaryear + " Tí" ;break;
+                   case 5: lunaryear=lunaryear + " Sửu" ;break;
+                   case 6: lunaryear=lunaryear + " Dần" ;break;
+                   case 7: lunaryear=lunaryear + " Mão" ;break;
+                   case 8: lunaryear=lunaryear + " Thìn" ;break;
+                   case 9: lunaryear=lunaryear + " Tỵ" ;break;
+                   case 10:lunaryear=lunaryear + " Ngọ" ;break;
+                   case 11:lunaryear=lunaryear + " Mùi" ;break;
+            }
+            document.write(lunaryear);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><input type="number" id="first"></td>
+                <td><input type="number" id="second"></td>
+                <td><input type="submit" value="Cộng" onclick="plus()"></td>
+                <td><input type="submit" value="Trừ"  onclick="sub()"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function plus() {
+            let st1 = document.getElementById('first').value;
+            let st2 = document.getElementById('second').value;
+            st1 = parseFloat(st1);
+            st2 = parseFloat(st2);
+            let Result = st1 + st2;
+            console.log({st1,st2,Result});
+            <h1>Result:</h1>
+            document.write(Result);
+        }
+
+        // function sub() {
+            // let st1 = document.getElementById('first').value;
+            // let st2 = document.getElementById('second').value;
+            // st1 = parseFloat(st1);
+            // st2 = parseFloat(st2);
+            // let Result = st1+st2;
+            // <h1>Result:</h1>
+            // document.write(Result);
+        // }
+    </script>
+</body>
+</html>
