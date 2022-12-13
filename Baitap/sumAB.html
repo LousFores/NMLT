@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a,b,sout;
+        do {
+            a = parseInt(prompt('Nhập vào a:= '));
+            b = parseInt(prompt('Nhập vào b:= '));
+            if (a>b) {
+                alert('Xin hãy nhập lại!');
+            }
+        } while (a > b);
+
+        let num,sum;
+        num=a;
+        sout ="<table border = '1' width='300' cellspading = '3' cellpadding='0'>";
+           sout = sout + '<tr>';
+                while (num<=b) {
+                   sum = num + b;
+                   sout = sout + '<td>' + num + '+' + b + '=' + sum +'</td>';
+                   num ++;
+                }
+                sout = sout + '</tr>';
+        sout = sout + '</table>';
+        document.write(sout);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let n = parseInt(prompt('Nhập vào số n: '));
+       if (n==2) {
+         document.write(1,' ',1);
+       } else {
+           let count=3;
+           let f1=f2=1;
+           let text = '1' + ' ' + ' 1';
+           let fn;
+           while (count <= n) {
+              fn = f1 + f2;
+              text += ' ' + fn;
+              f1 = f2;
+              f2 = fn;   
+              count ++;
+            }
+        document.write(text);
+       }
+   </script>
+</body>
+</html>

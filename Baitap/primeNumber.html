@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let N = 3;
+        let count = 1;
+        let num,mid;
+        let ok = true;
+        let text = 2;
+        while (count<20) {
+            mid = 2;
+            num = parseInt(N/2);
+            while (mid <= num) {
+                if ((N%mid)==0) {
+                    ok = false;
+                    break;
+                } else {
+                    mid++;
+                }
+            }
+            if (ok==true) {
+               text = text + ' ' + N;
+               count++;
+            } else {
+                ok = true;
+            }
+            N++;
+        }
+        document.write(text);
+    </script>
+</body>
+</html>
