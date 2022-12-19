@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Google dịch đơn giản -->
+    <p>Nhập English:</p>
+    <input type="text" id="english">
+    <input type="button" value="Transtale" onclick="onClick()">
+    <div id="result"></div>
+    <script>
+        function onClick() {
+            let trans = [
+                [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],
+                ['zero','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty']
+            ];
+            let char = document.getElementById('english').value;
+            //document.write(trans[0].length);
+            for (let i = 0; i < trans[0].length; i++) {
+                if (char == trans[0][i]) {
+                document.getElementById('result').innerHTML = trans[1][i]; 
+                }
+            
+            }
+        }
+    </script>
+</body>                                                                                                                                                                                                                                                                                                                                                                                                                                        
+</html>
